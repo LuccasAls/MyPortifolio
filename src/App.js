@@ -3,7 +3,7 @@ import "./App.css"
 import Navbar from './components/Navbar';
 import Getting from './components/Getting';
 
-export default () => {
+const App = () => {
   return (
     <div>
       <section>
@@ -14,4 +14,5 @@ export default () => {
       </section>
     </div>
   )
-} 
+}
+export default App

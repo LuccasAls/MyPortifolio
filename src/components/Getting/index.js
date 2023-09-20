@@ -25,7 +25,7 @@ class Getting extends Component {
                             <span>Saiba Mais</span>
                         </button>
                         <div className="buttonCvContainer">
-                            <button className="button cv" onClick={() => console.log('oi')}>
+                            <button className="button cv" >
                                 <span>Download CV</span>
                             </button>
 
