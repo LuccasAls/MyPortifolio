@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/LuccasAls/MyPortifolio/static/css/main.f8b364a6.css",
+    "main.js": "/LuccasAls/MyPortifolio/static/js/main.3d7dfa5a.js",
+    "static/media/bannerT.png": "/LuccasAls/MyPortifolio/static/media/bannerT.279a46e00592f3e718cd.png",
+    "index.html": "/LuccasAls/MyPortifolio/index.html",
+    "main.f8b364a6.css.map": "/LuccasAls/MyPortifolio/static/css/main.f8b364a6.css.map",
+    "main.3d7dfa5a.js.map": "/LuccasAls/MyPortifolio/static/js/main.3d7dfa5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8b364a6.css",
+    "static/js/main.3d7dfa5a.js"
+  ]
+}
