@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+section .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: greenyellow; */
+    justify-content: center;
+    align-items: center;
+}
+
+div .box {
+    display: flex;
+    flex-direction: column;
+    height: 641px;
+    width: 758px;
+    background: rgba(96, 96, 96, 0.19); 
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0px;
+}
+.footerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+div.bannerContainer {
+    margin-left: 1rem;
+
+}
+
+div .nameSpanContainer {
+    display: flex;
+}
+
+div img .bannerImg {
+    height: 500px;
+}
+
+h2.nameSpan {
+    font-size: 55px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #fff;
+}
+h2.nameColor {
+    padding-left: 15px ;
+    font-size: 55px;
+    font-family: Poppins;
+    font-weight: 700;
+    background: linear-gradient(88deg, #FFF500 0%, rgba(118, 255, 173, 0.81) 72.95%, #508DE9 99.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.containerGetting{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.description {
+    margin-top: 20px;
+    width: 60%;
+}
+
+div.description span {
+    display: flex;
+    color: #7B7B7B;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+   
+
+}
+
+button.button {
+    height: 80px;
+    width: 290px;
+
+}
+button.button.cv {
+    margin: 5px;
+    background-color: #091121;
+    border-radius: 5px;
+    border: none;
+
+}
+div.buttonCvContainer {
+    display: flex;
+    background: linear-gradient(85deg, rgba(255, 245, 0, 0.70) 0.24%, rgba(118, 255, 173, 0.57) 54.7%, rgba(80, 141, 233, 0.70) 97.96%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+button.primary {
+    height: 90px;
+    width: 300px;
+    border-radius: 10px;
+    background: linear-gradient(85deg, rgba(255, 245, 0, 0.70) 0.24%, rgba(118, 255, 173, 0.57) 54.7%, rgba(80, 141, 233, 0.70) 97.96%);
+    border: none;
+}
+
+button.primary span {
+    color: #161616;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+button.button span {
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(88deg, #F2B705 0%, rgba(118, 255, 173, 0.81) 54.33%, #508DE9 99.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1600px) {
+    div .bannerContainer {
+        display: none;
+    }
+}
+@media screen and (max-width:770px) {
+    section .container {
+        padding: 0px 40px;
+    }
+
+    h2.nameSpan {
+        font-size: 40px;
+
+    }
+    H2.nameColor {
+        font-size: 40px;
+
+    }
+
+    div .box {
+        width: 100%;
+        height: auto;
+    }
+
+    div.description span {
+        font-size: 24px;
+
+    }
+
+    div.description {
+        width: 80%;
+        margin-bottom: 7rem ;
+    }
+
+    button.primary {
+        height: 70px;
+        width: 200px;
+    }
+    
+    div.buttonCvContainer {
+        height: 70px;
+        width: 200px;     
+    }
+    button.button.cv {
+        height: 60px;
+    }
+    button.button span {
+        font-size: 18px;
+    }
+    button.primary span {
+        font-size: 18px;
+
+    }
+   
+}

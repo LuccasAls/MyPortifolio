@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #191A25;
+    border-bottom: 3px solid rgba(79, 79, 79, 0.65);
+    backdrop-filter: blur(20px);
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+
+
+}
+.logo span {
+    color: #fff;
+    font-family: 'Poppins';
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+}
+
+#navbar{
+    display: flex;
+    list-style: none;
+    background-color: #191A25;
+    gap: 30px
+
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    
+}
+#navbar li a:hover,
+#navbar li a.active {
+    background: linear-gradient(90deg, #FFF500 0%, rgba(118, 255, 173, 0.81) 72.95%, #508DE9 99.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: " ";
+    background: linear-gradient(90deg, #FFF500 0%, rgba(118, 255, 173, 0.81) 72.95%, #508DE9 99.34%);
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 2px;
+    bottom: -4px;
+}
+.menuIconContent {
+    display: none;
+}
+
+.menuIcon {
+    height: 32px;
+    width: 32px;
+}
+
+@media screen and (max-width:770px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 91px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #191A25;
+        backdrop-filter: blur(20px);
+        padding: 20px 0px 0px 50px;
+        transition: 0.3s ease-in-out;
+    }
+    #navbar.active{
+        right: 0;
+    } 
+    .menuIconContent {
+        display: block;
+    }
+}
