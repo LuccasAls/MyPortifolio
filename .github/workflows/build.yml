@@ -3,30 +3,22 @@ name: deploy
 on:
   push:
     branches:
-      - main # substitua pelo nome da sua branch principal
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu:lasted
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          node-version: 18.17.1 # use a versão Node.js que você precisa
-
-      - name: Install Dependencies
-        run: npm install # ou yarn install, dependendo do seu gerenciador de pacotes
-
-      - name: Build
-        run: npm run build # ou yarn build, dependendo do seu gerenciador de pacotes
-
-      - name: Deploy to GitHub Pages
+          node-version: '18.x'
+      - name: Build web-app
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # caminho para a pasta de build
-
+          publish_dir: ./build
