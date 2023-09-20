@@ -1,26 +1,26 @@
 name: deploy
 
-on: 
+on:
   push:
-  branches:
-  - main
+    branches:
+      - main
 
-jobs: 
-  deploy: 
+jobs:
+  deploy:
     runs-on: ubuntu-18.04
-    steps: 
+    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: '14.x'
       - name: Build web-app
         run: |
-          npm cli
+          npm ci
           npm run build
-      - name: Deploy to gh-pages@v3
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
-        with: 
-          github_token: ${{ secrets.GITHUB_TOKEN}}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
 
 
